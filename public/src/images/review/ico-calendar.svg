@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1415">
+<g id="Vector">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5ZM5 2C2.23858 2 0 4.23858 0 7V19C0 21.7614 2.23858 24 5 24H19C21.7614 24 24 21.7614 24 19V7C24 4.23858 21.7614 2 19 2H5Z" fill="#FFC37C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 8L7 0L10 1.31134e-07V8H7Z" fill="#FFC37C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8V0L18 1.31134e-07V8H15Z" fill="#FFC37C"/>
+</g>
+</g>
+</svg>
