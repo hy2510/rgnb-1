@@ -285,10 +285,78 @@ export const BasicButtonBox = styled.div<{ $color?: string }>`
     props.$color == 'red' ? '#ff274f' : '#00a0fd'};
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 0 3px 0 #ac112d;
+  box-shadow: 0 3px 0
+    ${(props) => (props.$color == 'red' ? '#ac112d' : '#007bc2')};
   transform: scale(1);
   transition: transform 0.2s;
   &:active {
     transform: scale(0.98);
+  }
+`
+
+export const ChooseAvatarAndReadingUnitBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .sub-title {
+    font-family: 'SDGdGulim', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 5px;
+  }
+  select {
+    height: 50px;
+    border: 1.5px solid #d2d2d2;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1em;
+  }
+  .avatar-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+`
+
+export const AvatarItemBox = styled.div`
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 100px;
+  .avatar-image-container {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    background-color: #ffffff50;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .avatar-image {
+      margin-top: 50px;
+      min-width: 150px;
+      min-height: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      filter: grayscale(100%);
+    }
+  }
+  &.selected {
+    .avatar-image-container {
+      background-color: #00000010;
+      border: 3px solid var(--green);
+      .avatar-image {
+        filter: grayscale(0);
+      }
+    }
+  }
+  .avatar-name {
+    font-family: 'SDGdGulim', sans-serif;
+    font-size: 0.9em;
   }
 `

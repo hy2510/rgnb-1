@@ -1,7 +1,7 @@
 import SiteLayoutComponent from './SiteLayoutComponent'
 
 export const metadata = {
-  title: 'Reading Gate',
+  title: 'RG Class',
   description: 'English Library',
 }
 

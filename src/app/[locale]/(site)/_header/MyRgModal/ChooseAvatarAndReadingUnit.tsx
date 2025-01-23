@@ -1,6 +1,12 @@
 'use client'
 
+import {
+  AvatarItemBox,
+  BasicButtonBox,
+  ChooseAvatarAndReadingUnitBox,
+} from '@/app/_ui/StyledCommon'
 import useTranslation from '@/localization/client/useTranslations'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { useStudentAvatar } from '@/client/store/student/avatar/selector'
 import { useFetchSetStudentAvatarAndReadingUnit } from '@/client/store/student/info/hook'
@@ -49,12 +55,14 @@ export function ChooseAvatarAndReadingUnit({
     }
   }
 
+  const router = useRouter()
+
   return (
-    <div>
+    <ChooseAvatarAndReadingUnitBox>
       {/* 학습 캐릭터 */}
-      <div>Reading Unit</div>
+      <div className="sub-title">Reading Unit</div>
       {/* 학습 캐릭터는 '퀘스트'에서 새로운 친구의 스토리를 잠금 해제할 때마다 자동으로 추가 됩니다. */}
-      <div>{t('t549')}</div>
+      {/* <div>{t('t549')}</div> */}
       <select
         onChange={(e) => {
           setSelectedReadingUnit(e.target.value)
@@ -69,8 +77,8 @@ export function ChooseAvatarAndReadingUnit({
         })}
       </select>
 
-      <div>My Avatar</div>
-      <div>
+      <div className="sub-title">My Avatar</div>
+      <div className="avatar-table">
         {avatarList.map((avatar) => {
           return (
             <div key={`choose_${avatar.avatarId}`}>
@@ -84,13 +92,16 @@ export function ChooseAvatarAndReadingUnit({
           )
         })}
       </div>
-      <button
+      <BasicButtonBox
+        $color="red"
         onClick={() => {
           onChangeOption()
+          router.refresh()
+          alert('나의 리딩유닛과 아바타가 변경되었습니다.')
         }}>
         {t('t083')}
-      </button>
-    </div>
+      </BasicButtonBox>
+    </ChooseAvatarAndReadingUnitBox>
   )
 }
 
@@ -109,14 +120,17 @@ function AvatarItem({
   onClickAvatar?: () => void
 }) {
   return (
-    <div
+    <AvatarItemBox
+      className={`${selected ? 'selected' : null}`}
       onClick={() => {
         onClickAvatar && onClickAvatar()
       }}>
-      <div>
-        <div style={{ backgroundImage: `url(${avtImgSrc})` }}></div>
+      <div className="avatar-image-container">
+        <div
+          className="avatar-image"
+          style={{ backgroundImage: `url(${avtImgSrc})` }}></div>
       </div>
-      <div>{avtName}</div>
-    </div>
+      <div className="avatar-name">{avtName}</div>
+    </AvatarItemBox>
   )
 }

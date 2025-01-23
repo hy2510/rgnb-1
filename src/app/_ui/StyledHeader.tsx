@@ -22,14 +22,15 @@ export const ContainerBox = styled.div`
 
 export const NavsBox = styled.div`
   display: grid;
-  grid-template-columns: 55px 1fr 55px;
+  grid-template-columns: 200px 1fr 200px;
   align-items: center;
   height: 80px;
   .logo {
     display: block;
-    width: 55px;
+    width: 100%;
     height: 55px;
-    background: url('/src/images/g-header/ico-logo.svg') center / 50px no-repeat;
+    background: url('/src/images/g-header/img-logo.png') left center / auto 45px
+      no-repeat;
   }
   .menu {
     display: flex;
@@ -48,6 +49,7 @@ export const NavsBox = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-left: auto;
     img {
       width: 120%;
       height: auto;

@@ -44,21 +44,21 @@ export default function GHeader() {
                   <Link href={SITE_PATH.LESSON.MAIN}>
                     <NavItemBox
                       $active={pathname.indexOf(SITE_PATH.LESSON.MAIN) != -1}>
-                      <div className="icon lesson"></div>
+                      {/* <div className="icon lesson"></div> */}
                       <div className="text">오늘의 수업</div>
                     </NavItemBox>
                   </Link>
                   <Link href={SITE_PATH.COURSE.MAIN}>
                     <NavItemBox
                       $active={pathname.indexOf(SITE_PATH.COURSE.MAIN) != -1}>
-                      <div className="icon course"></div>
+                      {/* <div className="icon course"></div> */}
                       <div className="text">모든 코스</div>
                     </NavItemBox>
                   </Link>
                   <Link href={SITE_PATH.REVIEW.MAIN}>
                     <NavItemBox
                       $active={pathname.indexOf(SITE_PATH.REVIEW.MAIN) != -1}>
-                      <div className="icon review"></div>
+                      {/* <div className="icon review"></div> */}
                       <div className="text">다시 보기</div>
                     </NavItemBox>
                   </Link>
