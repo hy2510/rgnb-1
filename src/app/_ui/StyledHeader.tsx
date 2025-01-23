@@ -25,6 +25,7 @@ export const NavsBox = styled.div`
   grid-template-columns: 200px 1fr 200px;
   align-items: center;
   height: 80px;
+  position: relative;
   .logo {
     display: block;
     width: 100%;

@@ -149,12 +149,12 @@ function TotalStudyScore({
           <div className="label">{t('t058')}</div>
           <div className="contents">{t('t023', { num: totalPassed })}</div>
         </div>
-        <div className="col-2nd">
+        {/* <div className="col-2nd">
           <div className="label">{t('t060')}</div>
           <div className="contents">
             {NumberUtils.toRgDecimalPoint(totalEarnPoints)}P
           </div>
-        </div>
+        </div> */}
       </div>
     </TotalStudyScoreBox>
   )

@@ -98,9 +98,10 @@ export function MyRgModal({ onCloseModal }: { onCloseModal?: () => void }) {
     //   }}
     //   onClickDelete={onModalClose}
     //   onClickLightbox={onModalClose}>
-    <ModalBox>
-      <ModalContainerBox>
-        <ModalHeaderBox>
+    <ModalBox className={`${viewName === '/' ? 'change-dropdown' : null}`}>
+      <ModalContainerBox
+        className={`${viewName === '/' ? 'change-dropdown' : null}`}>
+        <ModalHeaderBox style={{ display: viewName === '/' ? 'none' : 'flex' }}>
           <div className="title">My Info</div>
           <button
             onClick={() => {
@@ -108,7 +109,8 @@ export function MyRgModal({ onCloseModal }: { onCloseModal?: () => void }) {
             }}
             className="delete-button"></button>
         </ModalHeaderBox>
-        <ModalBodyBox>
+        <ModalBodyBox
+          className={`${viewName === '/' ? 'change-dropdown' : null}`}>
           {viewName === '/' && (
             <MyRg
               onMenuClick={onMenuSelectListener}

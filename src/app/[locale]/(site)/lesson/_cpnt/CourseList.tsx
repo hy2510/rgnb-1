@@ -1,3 +1,4 @@
+import { VideoModalBox } from '@/app/_ui/StyledCommon'
 import {
   CheckCourseCompletionBox,
   CourseContentsBox,
@@ -47,6 +48,7 @@ export default function CourseList() {
             bookPassed3={false}
           />
         </GridBox>
+        <VideoModalBox />
       </>
     </CourseListBox>
   )
