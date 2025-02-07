@@ -12,7 +12,7 @@ export default function PageRoot() {
         <GapBox $px={68} />
         <WeeklyBoard />
         <CourseList />
-        <VideoModal />
+        {/* <VideoModal /> */}
       </PageContainerBox>
     </PageBodyBox>
   )

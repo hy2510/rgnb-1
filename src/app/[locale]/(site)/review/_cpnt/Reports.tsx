@@ -13,8 +13,8 @@ export default function Reports() {
   return (
     <ReportsBox>
       <PillsBox>
-        <PillItemBox $active={true}>All 10권</PillItemBox>
-        <PillItemBox $active={false}>Passed 9권</PillItemBox>
+        <PillItemBox $active={true}>All 8권</PillItemBox>
+        <PillItemBox $active={false}>Passed 7권</PillItemBox>
         <PillItemBox $active={false}>Failed 1권</PillItemBox>
       </PillsBox>
       <GapBox $px={20} />

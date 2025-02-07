@@ -48,7 +48,8 @@ function CourseItem({
         {data.map((a: any, i: number) => {
           return (
             <div className="book-image" key={i}>
-              <div className="to-do-icon"></div>
+              {/* To-Do에 추가된 경우 */}
+              {/* <div className="to-do-icon"></div> */}
               <Image
                 src={a.image}
                 width={110}

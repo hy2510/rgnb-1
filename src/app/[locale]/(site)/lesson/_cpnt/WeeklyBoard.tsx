@@ -16,7 +16,7 @@ export default function WeeklyBoard() {
     {
       day: 'MON',
       date: 16,
-      completed: 3,
+      completed: 2,
       session: '1',
       sessionPassed: true,
       done: true,
@@ -34,7 +34,7 @@ export default function WeeklyBoard() {
     {
       day: 'WED',
       date: 18,
-      completed: 1,
+      completed: 0,
       session: '2',
       sessionPassed: true,
       done: true,

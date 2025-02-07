@@ -3,7 +3,7 @@ import { NavBarBox, NavItemBox } from '@/app/_ui/StyledCourse'
 export default function NavBar() {
   return (
     <NavBarBox>
-      <NavItem name="Alphabet" count={60} active={true} />
+      <NavItem name="Alphabet" count={30} active={true} />
       <NavItem name="Phonics" count={60} active={false} />
       <NavItem name="Sight Word" count={60} active={false} />
     </NavBarBox>

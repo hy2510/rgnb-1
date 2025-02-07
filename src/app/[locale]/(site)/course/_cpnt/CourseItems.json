@@ -17,20 +17,20 @@
             },
             {
                 "tag": "song",
-                "title": "Alphabet Chant Aa",
+                "title": "EB-PK-701",
                 "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-751.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-701.jpg"
             }
         ]
     },
     {
         "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
-        "passed": false,
+        "passed": true,
         "books": [
             {
                 "tag": "movie",
                 "title": "Alphabet Bb",
-                "passed": false,
+                "passed": true,
                 "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
             },
             {
@@ -41,129 +41,81 @@
             },
             {
                 "tag": "song",
-                "title": "Alphabet Chant Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
+                "title": "Bingo Dog",
+                "passed": true,
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-702.jpg"
             }
         ]
     },
     {
-        "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
+        "title": "3. 신나는 영상과 동요로 만나는 알파벳 C",
         "passed": false,
         "books": [
             {
                 "tag": "movie",
-                "title": "Alphabet Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
+                "title": "Alphabet Cc",
+                "passed": true,
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-303.jpg"
             },
             {
                 "tag": "ebook",
-                "title": "A Born on a Bus",
-                "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg"
+                "title": "I Want a Cake!",
+                "passed": false,
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-102.jpg"
             },
             {
                 "tag": "song",
-                "title": "Alphabet Chant Bb",
+                "title": "Three Little Bunnies",
                 "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-722.jpg"
             }
         ]
     },
     {
-        "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
+        "title": "4. 신나는 영상과 동요로 만나는 알파벳 D",
         "passed": false,
         "books": [
             {
                 "tag": "movie",
-                "title": "Alphabet Bb",
+                "title": "Alphabet Dd",
                 "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-304.jpg"
             },
             {
                 "tag": "ebook",
-                "title": "A Born on a Bus",
-                "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg"
+                "title": "A Duck's Train",
+                "passed": false,
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-004.jpg"
             },
             {
                 "tag": "song",
-                "title": "Alphabet Chant Bb",
+                "title": "Three Little Ducks",
                 "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-723.jpg"
             }
         ]
     },
     {
-        "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
+        "title": "5. 신나는 영상과 동요로 만나는 알파벳 E",
         "passed": false,
         "books": [
             {
                 "tag": "movie",
-                "title": "Alphabet Bb",
+                "title": "Alphabet Ee",
                 "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-305.jpg"
             },
             {
                 "tag": "ebook",
-                "title": "A Born on a Bus",
-                "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg"
+                "title": "The Elf Town",
+                "passed": false,
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-005.jpg"
             },
             {
                 "tag": "song",
-                "title": "Alphabet Chant Bb",
+                "title": "London Bridge",
                 "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
-            }
-        ]
-    },
-    {
-        "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
-        "passed": false,
-        "books": [
-            {
-                "tag": "movie",
-                "title": "Alphabet Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
-            },
-            {
-                "tag": "ebook",
-                "title": "A Born on a Bus",
-                "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg"
-            },
-            {
-                "tag": "song",
-                "title": "Alphabet Chant Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
-            }
-        ]
-    },
-    {
-        "title": "2. 신나는 영상과 동요로 만나는 알파벳 B",
-        "passed": false,
-        "books": [
-            {
-                "tag": "movie",
-                "title": "Alphabet Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg"
-            },
-            {
-                "tag": "ebook",
-                "title": "A Born on a Bus",
-                "passed": true,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg"
-            },
-            {
-                "tag": "song",
-                "title": "Alphabet Chant Bb",
-                "passed": false,
-                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-752.jpg"
+                "image": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-710.jpg"
             }
         ]
     }

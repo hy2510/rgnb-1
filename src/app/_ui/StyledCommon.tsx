@@ -17,7 +17,7 @@ export const PageBodyBox = styled.div`
     top 30px center;
   background-repeat: no-repeat, repeat-x, repeat-y;
   background-attachment: fixed, fixed, fixed;
-  background-color: #f4edd3;
+  background-color: rgb(244, 237, 211);
   @media (pointer: coarse) {
     background-image: url('/src/images/@common/bg-flower.svg'),
       url('/src/images/@common/bg-glass.svg');

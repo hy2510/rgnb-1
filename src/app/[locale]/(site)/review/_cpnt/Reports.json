@@ -1,110 +1,74 @@
 [
     {
-        "bookCode": "EB-KA-001",
-        "title": "Alphabet Aa",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-001.jpg",
-        "date": "2024-12-30",
+        "bookCode": "EB-PK-702",
+        "title": "Bingo Dog",
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-702.jpg",
+        "date": "2024-11-16",
         "totalScore": 100,
         "passed": true,
         "passCount": 1
     },
     {
         "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
+        "title": "A Bone on a Bus",
         "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "date": "2024-11-16",
+        "totalScore": 70,
+        "passed": true,
+        "passCount": 1
     },
     {
         "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
+        "title": "A Bone on a Bus",
         "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
+        "date": "2024-11-16",
+        "totalScore": 90,
         "passed": false,
-        "passCount": 0
+        "passCount": 1
     },
     {
-        "bookCode": "EB-KA-002",
+        "bookCode": "EB-PK-302",
         "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-302.jpg",
+        "date": "2024-11-16",
+        "totalScore": 100,
+        "passed": true,
+        "passCount": 1
     },
     {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "bookCode": "EB-PK-701",
+        "title": "ABC Song",
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-701.jpg",
+        "date": "2024-11-16",
+        "totalScore": 100,
+        "passed": true,
+        "passCount": 2
     },
     {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "bookCode": "EB-PK-701",
+        "title": "ABC Song",
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-701.jpg",
+        "date": "2024-11-16",
+        "totalScore": 100,
+        "passed": true,
+        "passCount": 1
     },
     {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "bookCode": "EB-KA-001",
+        "title": "Alligator's Apples",
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-001.jpg",
+        "date": "2024-11-16",
+        "totalScore": 80,
+        "passed": true,
+        "passCount": 1
     },
     {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
-    },
-    {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
-    },
-    {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
-    },
-    {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
-    },
-    {
-        "bookCode": "EB-KA-002",
-        "title": "Alphabet Bb",
-        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-002.jpg",
-        "date": "2024-12-30",
-        "totalScore": 60,
-        "passed": false,
-        "passCount": 0
+        "bookCode": "EB-PK-301",
+        "title": "Alphabet Aa",
+        "imgSrc": "https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-301.jpg",
+        "date": "2024-11-16",
+        "totalScore": 100,
+        "passed": true,
+        "passCount": 1
     }
 ]

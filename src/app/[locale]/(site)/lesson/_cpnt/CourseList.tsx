@@ -27,28 +27,44 @@ export default function CourseList() {
         <SessionNameBox>수업 2회차</SessionNameBox>
         <GridBox>
           <CourseContents
-            courseName="1. 신나는 영상과 동요로 만나는 알파벳 A"
-            coursePassed={true}
-            bookPassed1={true}
-            bookPassed2={true}
-            bookPassed3={true}
-          />
-          <CourseContents
-            courseName="2. 신나는 영상과 동요로 만나는 알파벳 B"
+            courseName="3. 신나는 영상과 동요로 만나는 알파벳 C"
             coursePassed={false}
+            bookImage1="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-303.jpg"
+            bookBgImage1="https://wcfresource.a1edu.com/newsystem/image/dodoabc/cover/eb-pk-303.jpg"
+            bookImage2="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-102.jpg"
+            bookBgImage2="https://wcfresource.a1edu.com/newsystem/neulbom/ebook/thurmnail-list/eb-ka-102.png"
+            bookImage3="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-722.jpg"
+            bookBgImage3="https://wcfresource.a1edu.com/newsystem/image/dodoabc/cover/eb-pk-722.jpg"
+            bookCode1="EB-PK-303"
+            bookCode2="EB-KA-102"
+            bookCode3="EB-PK-722"
+            bookTitle1="Alphabet Cc"
+            bookTitle2="I Want a Cake!"
+            bookTitle3="Three Little Bunnies"
             bookPassed1={true}
             bookPassed2={false}
             bookPassed3={false}
           />
           <CourseContents
-            courseName="3. 신나는 영상과 동요로 만나는 알파벳 B"
+            courseName="4. 신나는 영상과 동요로 만나는 알파벳 D"
             coursePassed={false}
-            bookPassed1={true}
+            bookImage1="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-304.jpg"
+            bookBgImage1="https://wcfresource.a1edu.com/newsystem/image/dodoabc/cover/eb-pk-304.jpg"
+            bookImage2="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-ka-004.jpg"
+            bookBgImage2="https://wcfresource.a1edu.com/newsystem/neulbom/ebook/thurmnail-list/eb-ka-004.png"
+            bookImage3="https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-705.jpg"
+            bookBgImage3="https://wcfresource.a1edu.com/newsystem/image/dodoabc/cover/eb-pk-705.jpg"
+            bookCode1="EB-PK-304"
+            bookCode2="EB-KA-004"
+            bookCode3="EB-PK-705"
+            bookTitle1="Alphabet Dd"
+            bookTitle2="A Duck's Train"
+            bookTitle3="Three Little Ducks"
+            bookPassed1={false}
             bookPassed2={false}
             bookPassed3={false}
           />
         </GridBox>
-        <VideoModalBox />
       </>
     </CourseListBox>
   )
@@ -57,24 +73,69 @@ export default function CourseList() {
 function CourseContents({
   courseName,
   coursePassed,
+  bookImage1,
+  bookImage2,
+  bookImage3,
+  bookBgImage1,
+  bookBgImage2,
+  bookBgImage3,
   bookPassed1,
   bookPassed2,
   bookPassed3,
+  bookCode1,
+  bookCode2,
+  bookCode3,
+  bookTitle1,
+  bookTitle2,
+  bookTitle3,
 }: {
   courseName?: string
   coursePassed?: boolean
+  bookImage1?: string
+  bookImage2?: string
+  bookImage3?: string
+  bookBgImage1?: string
+  bookBgImage2?: string
+  bookBgImage3?: string
   bookPassed1?: boolean
   bookPassed2?: boolean
   bookPassed3?: boolean
+  bookCode1?: string
+  bookCode2?: string
+  bookCode3?: string
+  bookTitle1?: string
+  bookTitle2?: string
+  bookTitle3?: string
 }) {
   return (
     <>
       <CheckCourseCompletion onCompletion={coursePassed} />
       <CourseContentsBox>
         <div className="title">{courseName}</div>
-        <CourseItem onCompletion={bookPassed1} />
-        <CourseItem onCompletion={bookPassed2} />
-        <CourseItem onCompletion={bookPassed3} />
+        <CourseItem
+          onCompletion={bookPassed1}
+          bookImage={bookImage1}
+          bookBgImage={bookBgImage1}
+          bookCode={bookCode1}
+          bookTitle={bookTitle1}
+          tag="Movie, Activity"
+        />
+        <CourseItem
+          onCompletion={bookPassed2}
+          bookImage={bookImage2}
+          bookBgImage={bookBgImage2}
+          bookCode={bookCode2}
+          bookTitle={bookTitle2}
+          tag="eBook"
+        />
+        <CourseItem
+          onCompletion={bookPassed3}
+          bookImage={bookImage3}
+          bookBgImage={bookBgImage3}
+          bookCode={bookCode3}
+          bookTitle={bookTitle3}
+          tag="Song"
+        />
       </CourseContentsBox>
     </>
   )
@@ -88,26 +149,40 @@ function CheckCourseCompletion({ onCompletion }: { onCompletion?: boolean }) {
   )
 }
 
-function CourseItem({ onCompletion }: { onCompletion?: boolean }) {
-  const bookImage =
-    'https://wcfresource.a1edu.com/newsystem/image/br/covernew1/eb-pk-301.jpg'
-  const bookBgImage =
-    'https://wcfresource.a1edu.com/newsystem/image/dodoabc/cover/eb-pk-301.jpg'
-
+function CourseItem({
+  onCompletion,
+  bookImage,
+  bookBgImage,
+  bookCode,
+  bookTitle,
+  tag,
+}: {
+  onCompletion?: boolean
+  bookImage?: string
+  bookBgImage?: string
+  bookCode?: string
+  bookTitle?: string
+  tag?: string
+}) {
   return (
     <CourseItemBox className={onCompletion ? 'check' : ''}>
       <div className={`check ${onCompletion ? 'on' : 'off'}`}></div>
       <div className="book-image">
-        <Image src={bookImage} width={120} height={160} alt="" />
+        <Image
+          src={bookImage ? bookImage : ''}
+          width={120}
+          height={160}
+          alt=""
+        />
       </div>
       <div className="book-name">
-        <div className="book-code">EB-KA-001</div>
-        <div className="book-title">Alphabet Aa</div>
+        <div className="book-code">{bookCode}</div>
+        <div className="book-title">{bookTitle}</div>
       </div>
       <div
         className={`book-bg ${onCompletion ? 'completed' : null}`}
         style={{ backgroundImage: `url(${bookBgImage})` }}></div>
-      <div className="tag">Movie</div>
+      <div className="tag">{tag}</div>
     </CourseItemBox>
   )
 }
