@@ -32,6 +32,7 @@ export const LoginBodyBox = styled.div`
   .sign-in {
     width: 500px;
     height: 370px;
+    margin-top: 5vh;
     position: absolute;
     top: calc(50% - 180px);
     left: calc(50% - 250px);
@@ -44,6 +45,17 @@ export const LoginBodyBox = styled.div`
     gap: 10px;
     background: url('/src/images/@common/bg-log-in-body.svg') top / contain
       no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 240px);
+      right: 0;
+      bottom: calc(100% - 30px);
+      width: 100%;
+      height: 200px;
+      background: url('/src/images/@common/dodo_16_5 1.png') center / auto 180px
+        no-repeat;
+    }
     &::after {
       content: '';
       position: absolute;

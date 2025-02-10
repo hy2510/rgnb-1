@@ -91,7 +91,8 @@ export const NavItemBox = styled.div<{ $icon?: string; $active?: boolean }>`
   }
 `
 export const GFooterBox = styled.div`
-  width: 1128px;
+  width: 100%;
+  max-width: 1128px;
   padding: 50px;
   margin: auto;
   display: flex;

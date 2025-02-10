@@ -6,8 +6,8 @@ export const WeeklyBoardBox = styled.div`
   width: 100%;
   margin: auto;
   padding: 0 20px;
-  position: sticky;
-  top: 30px;
+  position: relative;
+  top: 0;
   z-index: 2;
   .header {
     position: absolute;

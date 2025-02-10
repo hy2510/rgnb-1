@@ -155,7 +155,7 @@ export const CourseItemBox = styled.div`
     display: flex;
     gap: 10px;
     align-items: end;
-    justify-content: space-between;
+    justify-content: end;
     .book-image {
       position: relative;
       .to-do-icon {

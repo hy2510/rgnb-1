@@ -70,6 +70,7 @@ export default function MyRg({
       />
       <BasicButtonBox
         $color="red"
+        style={{ marginBottom: '5px' }}
         onClick={() =>
           setTimeout(() => {
             onMyRgMenuClickListener('logout')
