@@ -4,27 +4,27 @@ import styled from 'styled-components'
 
 export const PageBodyBox = styled.div`
   min-height: calc(100vh - 80px);
-  background-image: url('/src/images/@common/bg-flower.svg'),
-    url('/src/images/@common/bg-glass.svg'),
-    url('/src/images/@common/bg-item-reading-unit01.png'),
+  background-image: url('/src/images/@common/bg-item-reading-unit01.png'),
     url('/src/images/@common/bg-item-reading-unit02.png'),
     url('/src/images/@common/bg-item-reading-unit03.png'),
+    url('/src/images/@common/bg-flower.svg'),
+    url('/src/images/@common/bg-glass.svg'),
     url('/src/images/@common/bg-stump.png');
   background-size:
-    auto 130px,
-    auto 900px,
     220px auto,
     220px auto,
     160px auto,
+    auto 130px,
+    auto 900px,
     1800px auto;
   background-position:
-    top 20px center,
-    top -620px center,
     left 5% top 300px,
     right 1.5% bottom 20px,
     right 2.5% bottom 50vh,
+    top 20px center,
+    top -620px center,
     top 50px center;
-  background-repeat: no-repeat, repeat-x, no-repeat, no-repeat, no-repeat,
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x,
     repeat-y;
   background-attachment: scroll;
   background-color: rgb(244, 237, 211);
