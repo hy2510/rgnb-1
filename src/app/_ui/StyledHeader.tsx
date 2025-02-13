@@ -33,6 +33,13 @@ export const NavsBox = styled.div`
     background: url('/src/images/g-header/img-logo.png') left center / auto 45px
       no-repeat;
   }
+  .logo-dodo-n-friends {
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: url('/src/images/g-header/img-logo_dodo_n_friends.png') left
+      center / 180px auto no-repeat;
+  }
   .menu {
     display: flex;
     align-items: center;

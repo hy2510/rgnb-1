@@ -27,13 +27,18 @@ export default function GHeader() {
 
   const { userAvatar } = useStudentAvatar()
 
+  const isDodoNfriends = true
+
   return (
     <>
       <CoursewareHeaderBox>
         <ContainerBox>
           <NavsBox>
             <Link href={SITE_PATH.HOME.MAIN}>
-              <div className="logo"></div>
+              <div
+                className={
+                  isDodoNfriends ? 'logo-dodo-n-friends' : 'logo'
+                }></div>
             </Link>
             {loginStatus === 'off' && (
               <Link href={SITE_PATH.ACCOUNT.SIGN_IN}>Login</Link>

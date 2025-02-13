@@ -2,7 +2,7 @@
 
 import styled from 'styled-components'
 
-export const LoginBodyBox = styled.div`
+export const LoginBodyBox = styled.div<{ $dodo?: boolean }>`
   min-height: 100vh;
   background: url('/src/images/@common/bg-glass.svg') top -200px left 0 / auto
     900px repeat-x #f4edd3;
@@ -66,6 +66,73 @@ export const LoginBodyBox = styled.div`
       height: 130px;
       background: url('/src/images/@common/bg-log-in-header.png') center / auto
         120px no-repeat;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      input {
+        width: 100%;
+        height: 60px;
+        padding: 0 16px;
+        border-radius: 15px;
+        border: 1px solid #311700;
+        background: #733600;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset;
+        color: #fff;
+        &::placeholder {
+          color: #ffc37c;
+        }
+      }
+      button {
+        background-color: var(--red);
+        color: #fff;
+        width: 100%;
+        height: 60px;
+        padding: 0 16px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+    }
+  }
+  .sign-in-dodo-n-friends {
+    width: 500px;
+    height: 370px;
+    margin-top: 5vh;
+    position: absolute;
+    top: calc(50% - 180px);
+    left: calc(50% - 250px);
+    background-color: #fff;
+    z-index: 2;
+    padding: 60px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: url('/src/images/@common/bg-log-in-body.svg') top / contain
+      no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(50% - 240px);
+      right: 0;
+      bottom: calc(100% - 30px);
+      width: 100%;
+      height: 200px;
+      background: url('/src/images/@common/dodo_16_5 1.png') center / auto 180px
+        no-repeat;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 130px;
+      background: url('/src/images/@common/bg-log-in-header_dodo_n_freinds.png')
+        center / auto 120px no-repeat;
     }
     form {
       display: flex;

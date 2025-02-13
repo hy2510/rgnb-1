@@ -39,9 +39,11 @@ export default function PageRoot({ to }: { to?: string }) {
 
   const isLoginDisabled = !loginId || !password
 
+  const isDodoNfriends = true
+
   return (
     <LoginBodyBox>
-      <div className="sign-in">
+      <div className={isDodoNfriends ? 'sign-in-dodo-n-friends' : 'sign-in'}>
         <form autoComplete="off">
           <input
             placeholder="아이디"
