@@ -42,6 +42,47 @@ export const PageBodyBox = styled.div`
       top 30px center;
     background-repeat: no-repeat, repeat-x, repeat-y;
   }
+  &.dodo-n-friends {
+    background-image: url('/src/images/@common/bg-item-reading-unit01.png'),
+      url('/src/images/@common/bg-item-reading-unit02.png'),
+      url('/src/images/@common/bg-item-reading-unit03.png'),
+      url('/src/images/@common/bg-flower.svg'),
+      url('/src/images/@common/img-stone.svg'),
+      url('/src/images/@common/bg-glass-and-stream.svg'),
+      url('/src/images/@common/bg-stump.png');
+    background-size:
+      220px auto,
+      220px auto,
+      160px auto,
+      auto 130px,
+      200px auto,
+      auto 900px,
+      1800px auto;
+    background-position:
+      left 5% top 300px,
+      right 1.5% bottom 20px,
+      right 2.5% bottom 50vh,
+      top 20px center,
+      top 210px right 10%,
+      top -520px center,
+      top 50px center;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      repeat-x, repeat-y;
+    @media screen and (max-width: 1280px) {
+      background-image: url('/src/images/@common/bg-flower.svg'),
+        url('/src/images/@common/bg-glass.svg'),
+        url('/src/images/@common/bg-stump.png');
+      background-size:
+        auto 130px,
+        auto 900px,
+        1400px auto;
+      background-position:
+        top center,
+        top -620px center,
+        top 30px center;
+      background-repeat: no-repeat, repeat-x, repeat-y;
+    }
+  }
   /* @media (pointer: coarse) {
     background-image: url('/src/images/@common/bg-flower.svg'),
       url('/src/images/@common/bg-glass.svg');

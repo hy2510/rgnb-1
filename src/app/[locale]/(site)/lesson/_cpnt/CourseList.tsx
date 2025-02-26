@@ -10,6 +10,8 @@ import {
 } from '@/app/_ui/StyledLesson'
 import Image from 'next/image'
 
+const isDodoNfriends = true
+
 export default function CourseList() {
   return (
     <CourseListBox>
@@ -24,7 +26,10 @@ export default function CourseList() {
 
       {/* 코스가 있는 경우 */}
       <>
-        <SessionNameBox>수업 2회차</SessionNameBox>
+        <SessionNameBox
+          className={isDodoNfriends ? 'dodo-n-friends' : 'rgclass'}>
+          수업 2회차
+        </SessionNameBox>
         <GridBox>
           <CourseContents
             courseName="3. 신나는 영상과 동요로 만나는 알파벳 C"

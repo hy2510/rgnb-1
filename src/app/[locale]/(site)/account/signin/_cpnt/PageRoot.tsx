@@ -7,6 +7,7 @@ import { LoginBodyBox } from '@/app/_ui/StyledAccount'
 import { BasicButtonBox } from '@/app/_ui/StyledCommon'
 import { useRouter } from 'next/navigation'
 import { useRef, useState } from 'react'
+import AccountList from './AccountList'
 
 export default function PageRoot({ to }: { to?: string }) {
   const appType = useApplicationType()
@@ -41,8 +42,8 @@ export default function PageRoot({ to }: { to?: string }) {
 
   const isDodoNfriends = true
 
-  return (
-    <LoginBodyBox>
+  const LoginForm = () => {
+    return (
       <div className={isDodoNfriends ? 'sign-in-dodo-n-friends' : 'sign-in'}>
         <form autoComplete="off">
           <input
@@ -84,7 +85,16 @@ export default function PageRoot({ to }: { to?: string }) {
             로그인
           </BasicButtonBox>
         </form>
+        {/* 계정목록 보기 버튼 */}
+        {isDodoNfriends ? <div className="btn-link">Account List</div> : <></>}
       </div>
+    )
+  }
+
+  return (
+    <LoginBodyBox>
+      <LoginForm />
+      {/* <AccountList /> */}
     </LoginBodyBox>
   )
 }

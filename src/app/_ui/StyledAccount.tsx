@@ -162,6 +162,16 @@ export const LoginBodyBox = styled.div<{ $dodo?: boolean }>`
         font-weight: 500;
       }
     }
+    .btn-link {
+      cursor: pointer;
+      color: #ffc37c;
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+      margin-top: 8px;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
   }
 `
 
@@ -258,5 +268,161 @@ export const EditChangePasswordBox = styled.div`
   input.active {
     background-color: #f0f0f0;
     border-radius: 5px;
+  }
+`
+
+export const AccountListBox = styled.div`
+  .account-list-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btn-link {
+    cursor: pointer;
+    width: fit-content;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+`
+
+export const AccountCardBox = styled.div`
+  position: relative;
+  .container-account-card {
+    cursor: pointer;
+    width: 300px;
+    height: 371px;
+    background: center no-repeat url('/src/images/@common/bg-account-card.svg');
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img-avatar {
+      width: 150px;
+      height: 150px;
+      background-size: 180px;
+      background-position: top 15px center;
+      background-repeat: no-repeat;
+      background-color: #733600;
+      border: 2px solid #311700;
+      border-radius: 100px;
+    }
+    .txt-student-name {
+      color: #fff;
+      text-align: center;
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+      font-size: 2em;
+      font-weight: 700;
+      max-width: 280px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .txt-student-id {
+      color: #ffd3ac;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 700;
+      max-width: 280px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .btn-delete {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: url('/src/images/@common/icon_delete.svg');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+  }
+`
+
+export const VerifyPasswordModalBox = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container-verify-password {
+    width: 300px;
+    height: 371px;
+    background: center no-repeat url('/src/images/@common/bg-account-card.svg');
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    .box-student-info {
+      margin-bottom: 20px;
+      .txt-student-name {
+        color: #fff;
+        text-align: center;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+        font-size: 2em;
+        font-weight: 700;
+      }
+      .txt-student-id {
+        color: #ffd3ac;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 700;
+      }
+    }
+    .box-input-password {
+      width: calc(100% - 40px);
+      border-radius: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #311700;
+      background: #733600;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset;
+      form {
+        input {
+          color: #ffffff;
+          font-size: 1.1em;
+          &::placeholder {
+            color: #ffc37c;
+          }
+        }
+      }
+    }
+    .box-btn-log-in {
+      width: calc(100% - 40px);
+    }
+  }
+  .container-light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
   }
 `

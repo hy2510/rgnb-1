@@ -189,6 +189,10 @@ export const SessionNameBox = styled.div`
   font-size: 2em;
   text-align: center;
   margin-bottom: 40px;
+  &.dodo-n-friends {
+    color: #fff;
+    text-shadow: 1.5px 1.5px #0041df;
+  }
 `
 
 export const GridBox = styled.div`
